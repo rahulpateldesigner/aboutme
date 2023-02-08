@@ -1,0 +1,39 @@
+// $theme-colors: ( "info": tomato, "danger": teal);
+$lightgray: #cbced8;
+$lightgray2: #e4e4e4;
+*{font-family: 'Nunito', sans-serif;}
+img{max-width: 100%; height: auto;}
+.mainLayout{ padding-left: 300px;}
+body{ background: $light; color: $dark; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-size: 18px;}
+
+.zIndex-5{z-index: 5;}
+::-webkit-scrollbar {width: 8px;}
+::-webkit-scrollbar-thumb { background: $secondary; border-radius: 4px; }  
+::-webkit-scrollbar-track { background: $lightgray; }
+::-webkit-scrollbar-thumb { background: $secondary; border-radius: 4px; }  
+::-webkit-scrollbar-thumb:hover { background: $dark; border-radius: 4px;}
+.mobileMenuIcon{display: none;}
+.webModeSwitch{position: absolute; right:0; top:0; z-index: 44; background-color: #037fff;}
+h1 {font-weight: 700;font-size: 3.2857rem;line-height: 4rem;}
+h2 { font-size: 2.57rem; line-height: 3.2857rem;}
+h3 {font-size: 2rem; line-height: 2.7rem;}
+ul.unstyled{list-style: none; padding: 0;}
+.panelPadding{ padding-top: 4rem; padding-bottom: 5rem;}
+.animate-transition{ transition: all .4s ease-out;}
+.hover-zoom{ overflow: hidden; position: relative;
+    &:before, &:after{content: ''; width:15px; height: 30%; position: absolute; top: 0; left: 0; background:$gray-600; opacity: .8; z-index: 1;}
+    &:after{top: inherit; left: inherit; right: 0; bottom: 0;}
+    img{ transition: all .4s ease-out;
+        &:hover{scale: 1.2;} 
+    }
+}
+.panel{
+    .panelTitle { margin-bottom: 60px; position: relative; z-index: 1;
+    span { color: rgba(215,220,230,.44); display: inline-block; font-size: 6rem; font-weight: 900; left: 0; line-height: 1; position: absolute; text-transform: uppercase; top: 100%; -webkit-transform: translateY(-40%); transform: translateY(-40%); -webkit-user-select: none; -ms-user-select: none;  user-select: none; white-space: nowrap; z-index: -1;}
+    h2{ font-weight: 700; padding-bottom: 15px; position: relative; text-transform: uppercase;
+        &:after, &:before { border-radius: 100px; bottom: 0; content: ""; height: 5px; left: 0; position: absolute; top: auto;}
+        &:before { background: rgba(3,127,255,.3); width: 100px;}
+        &:after { background: #037fff; width: 35px;}
+    }    
+    }
+}

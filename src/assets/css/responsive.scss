@@ -1,0 +1,22 @@
+// --------------lg------------------
+@media screen and (max-width: 991px) and (min-width: 767px) {
+ .sidebar{ width: 220px;}
+ .mainLayout { padding-left: 220px;}
+ .sidebar header .brandImg{width: 140px; height: 140px;}
+ .portfolioSection .card .cardHover{border-width: 10px;}
+ .panel .panelTitle span{ font-size: 4.5rem;}
+}
+
+// --------------md------------------
+@media screen and (max-width: 768px){
+    .panel .panelTitle span{ font-size: 3rem;}
+    .mainLayout { padding-left: 0;}
+    .sidebar-desktop{display: none!important;}
+    .offcanvas.offcanvas-start.sidebar{ max-width: 300px;}
+    .mobileMenuIcon{ display: block; font-size: 35px; color: #000; position: absolute; top: 15px; left: 20px; line-height: 47px; cursor: pointer; z-index: 55;}
+}
+
+//---------------sm----------------------
+@media screen and (max-width: 575px) {
+    // *{background-color: green;}
+}
